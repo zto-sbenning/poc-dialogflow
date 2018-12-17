@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule, IonicModule } from 'ionic-angular';
 import { ChatPage } from './chat';
 
 @NgModule({
@@ -8,6 +8,7 @@ import { ChatPage } from './chat';
   ],
   imports: [
     IonicPageModule.forChild(ChatPage),
+    IonicModule
   ],
   entryComponents: [
     ChatPage

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 180.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#Soustraction_23);
+      }
+    </style>
+    <filter id="Soustraction_23" x="0" y="0" width="350" height="180.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Soustraction_23-2" data-name="Soustraction 23" class="cls-1" d="M105,170H10A10.011,10.011,0,0,1,0,160V30A10.011,10.011,0,0,1,10,20h95a20,20,0,1,0,40,0H310a10.012,10.012,0,0,1,10,10V160a10.012,10.012,0,0,1-10,10H145a20,20,0,1,0-40,0Zm20-35a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,135Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,120Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,105Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,90Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,75Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,60Zm0-15a5,5,0,1,0,5,5A5.006,5.006,0,0,0,125,45Z" transform="translate(15 -10)"/>
+  </g>
+</svg>

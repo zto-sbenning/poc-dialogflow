@@ -71,7 +71,7 @@ $colors: (
 // default are overridden.
 
 @import "ionic.theme.default";
-
+@import "theme-default";
 
 // Ionicons
 // --------------------------------------------------
@@ -86,3 +86,17 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url("../assets/fonts/Oswald-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Oswald-Regular';
+  src: url("../assets/fonts/Oswald-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Oswald-SemiBold';
+  src: url("../assets/fonts/Oswald-SemiBold.ttf") format('truetype');
+}

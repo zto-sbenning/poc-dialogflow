@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.016 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+      }
+    </style>
+  </defs>
+  <path id="picto_precedent" class="cls-1" d="M124.689,19.778l-9.453-9.219a.781.781,0,0,1,0-1.119L124.689.222a.781.781,0,0,1,1.091,1.119L116.9,10l8.88,8.659a.781.781,0,0,1-1.091,1.119Z" transform="translate(-115 0)"/>
+</svg>

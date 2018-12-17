@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.188 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="1.249" x2="1" y2="1.249" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffa74a"/>
+      <stop offset="1" stop-color="#ed0066"/>
+    </linearGradient>
+  </defs>
+  <path id="picto_mentions_legales" class="cls-1" d="M51.234,0h-9.3a.789.789,0,0,0-.547.223L36.235,5.269A.788.788,0,0,0,36,5.827V18.071A1.943,1.943,0,0,0,37.953,20H51.234a1.943,1.943,0,0,0,1.953-1.929V1.929A1.943,1.943,0,0,0,51.234,0ZM41.153,2.64V5.046H38.7ZM51.625,18.071a.379.379,0,0,1-.391.366H37.953a.379.379,0,0,1-.391-.366V6.608h4.371a.781.781,0,0,0,.781-.781V1.563h8.519a.379.379,0,0,1,.391.366Z" transform="translate(-36)"/>
+</svg>

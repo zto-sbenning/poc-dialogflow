@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MessagesProvider, ChannelMessage, ChannelName, ChatBotErrorMessage, ChatBotSenderMessage, ChatBotReceiverMessage } from '../messages/messages';
 import { Observable } from 'rxjs';
-import { tap, switchMap, pluck, catchError, distinctUntilChanged, map } from 'rxjs/operators';
+import { tap, switchMap, pluck, catchError, distinctUntilChanged, map, mergeMap } from 'rxjs/operators';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
 /*
@@ -14,7 +14,7 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
 @Injectable()
 export class ChatProvider {
 
-  URL = 'http://192.168.1.78:5000';
+  URL = 'http://192.168.1.33:5000';
 
   constructor(
     public http: HttpClient,
@@ -52,8 +52,17 @@ export class ChatProvider {
   private sendChatBotMessage(message: string): Observable<any> {
     return this.http.post<string>(`${this.URL}/messages`, { message }).pipe(
       tap(r => console.log('Got r: ', r)),
-      map<any, any>(r => ({message: r.message, card: r.card})),
+      mergeMap<any, any>(r => 
+        r && r.response && r.response.result && r.response.result.fulfillment && r.response.result.fulfillment.messages
+          ? r.response.result.fulfillment.messages.map(m => (console.log('m: ', m), m.type === 0 ? {message: m.speech} : (m.type === 1 ? {card: m} : {suggestion: m})))
+          : [{message: r.message, card: r.card, suggestion: r.suggestion}]
+        // {message: r.message, card: r.card},
+      )
     );
+  }
+
+  ipCo(ip) {
+    this.URL = ip;
   }
 
   permission() {
@@ -81,7 +90,7 @@ export class ChatProvider {
     return this.messageProvider.getMessagesFrom(ChannelName.chatBotSender).pipe(pluck('message'));
   }
   getChatBotReceiverMessages(): Observable<any> {
-    return this.messageProvider.getMessagesFrom(ChannelName.chatBotReceiver).pipe(map(r => ({message: r.message, card: r.card})), tap(rr => console.log('RR: ', rr)));
+    return this.messageProvider.getMessagesFrom(ChannelName.chatBotReceiver).pipe(map(r => ({message: r.message, card: r.card, suggestion: r.suggestion})), tap(rr => console.log('RR: ', rr)));
   }
   getChatBotErrorMessages(): Observable<string> {
     return this.messageProvider.getMessagesFrom(ChannelName.chatBotError).pipe(pluck('message'));

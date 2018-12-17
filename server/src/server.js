@@ -19,7 +19,33 @@ app.post('/messages', async (req, res) => {
         createdAt: new Date().toISOString()
     };
     const query = chat.message;
-    const response = await dialogFlow.send(query);
+    const response = await dialogFlow.send1(query);
+    console.log(response.data.result.fulfillment);
+    const m = response.data.result.fulfillment.messages.find(m => m.type === 0);
+    const message = m ? m.speech : '';
+    const responseBody = {
+        response: response.data,
+        message: message,
+        card: response.data.result.fulfillment.messages.find(m => m.type === 1),
+        suggestion: response.data.result.fulfillment.messages.find(m => m.type === 2),
+        createdAt: new Date().toISOString(),
+        id: shortId.generate(),
+        chat
+    };
+    // console.log({req: req.body, resp: responseBody});
+    res.send(responseBody)
+});
+
+app.post('/messages-ch', async (req, res) => {
+    // simulate actual db save with id and createdAt added
+    console.log(req.body);
+    const chat = {
+        ...req.body,
+        id: shortId.generate(),
+        createdAt: new Date().toISOString()
+    };
+    const query = chat.message;
+    const response = await dialogFlow.send1(query);
     console.log(response.data.result.fulfillment);
     const m = response.data.result.fulfillment.messages.find(m => m.type === 0);
     const message = m ? m.speech : '';

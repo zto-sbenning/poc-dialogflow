@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.656 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="1.249" x2="1" y2="1.249" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#84ADF3"/>
+      <stop offset="1" stop-color="#84ADF3"/>
+    </linearGradient>
+  </defs>
+  <path id="picto_deconnexion" class="cls-1" d="M38.828,20A8.829,8.829,0,0,1,35.675,2.924a.781.781,0,0,1,.558,1.459,7.266,7.266,0,1,0,5.189,0,.781.781,0,0,1,.558-1.459A8.83,8.83,0,0,1,38.828,20Zm.781-11.568V.781a.781.781,0,0,0-1.562,0v7.65a.781.781,0,0,0,1.563,0Z" transform="translate(-30)"/>
+</svg>

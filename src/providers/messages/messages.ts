@@ -14,6 +14,7 @@ export class ChannelMessage {
     public channel: ChannelName,
     public message: string,
     public card?: any,
+    public suggestion?: any
   ) {}
 }
 
@@ -24,7 +25,12 @@ export class ChatBotSenderMessage extends ChannelMessage {
 }
 export class ChatBotReceiverMessage extends ChannelMessage {
   constructor(content: any) {
-    super(ChannelName.chatBotReceiver, typeof(content) === 'string' ? content : content.message, typeof(content) === 'string' ? undefined : content.card);
+    super(ChannelName.chatBotReceiver,
+      typeof(content) === 'string' ? content : content.message,
+      typeof(content) === 'string' ? undefined : content.card,
+      typeof(content) === 'string' ? undefined : content.suggestion
+    );
+    console.log('HHH: ', content);
   }
 }
 export class ChatBotErrorMessage extends ChannelMessage {

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #c4c4c4;
+      }
+
+      .cls-2 {
+        stroke: #383F4C;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="picto_nav_autour_de_moi_grey" transform="translate(-180 -633)">
+    <path id="Tracé_802" data-name="Tracé 802" class="cls-1" d="M7,0a7,7,0,0,1,7,7c0,3.866-5.017,11.438-7,11.438S0,10.866,0,7A7,7,0,0,1,7,0Z" transform="translate(181 634)"/>
+    <g id="Groupe_311" data-name="Groupe 311">
+      <path id="_075-placeholder" data-name="075-placeholder" class="cls-1" d="M63.5,20a.728.728,0,0,1-.411-.128,19.3,19.3,0,0,1-3.53-3.313A13.963,13.963,0,0,1,56,7.667a7.5,7.5,0,1,1,15,0,13.963,13.963,0,0,1-3.559,8.892,19.3,19.3,0,0,1-3.53,3.313A.728.728,0,0,1,63.5,20Zm0-18.438a6.06,6.06,0,0,0-6,6.1c0,5.478,4.584,9.485,6,10.592,3.213-2.507,6-6.384,6-10.592A6.06,6.06,0,0,0,63.5,1.563Zm0,10.01a3.835,3.835,0,0,1-3.75-3.906,3.753,3.753,0,1,1,7.5,0A3.835,3.835,0,0,1,63.5,11.573Zm0-6.25a2.3,2.3,0,0,0-2.25,2.344,2.252,2.252,0,1,0,4.5,0A2.3,2.3,0,0,0,63.5,5.323Z" transform="translate(124 633)"/>
+      <g id="Ellipse_146" data-name="Ellipse 146" class="cls-2" transform="translate(183.252 636.252)">
+        <circle class="cls-3" cx="4.248" cy="4.248" r="4.248"/>
+        <circle class="cls-4" cx="4.248" cy="4.248" r="3.248"/>
+      </g>
+    </g>
+  </g>
+</svg>

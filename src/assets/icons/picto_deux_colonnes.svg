@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c4c4c4;
+      }
+    </style>
+  </defs>
+  <g id="picto_deux_colonnes" transform="translate(-62 -299)">
+    <rect id="Rectangle_987" data-name="Rectangle 987" class="cls-1" width="20" height="25" rx="3" transform="translate(62 299)"/>
+    <rect id="Rectangle_990" data-name="Rectangle 990" class="cls-1" width="20" height="30" rx="3" transform="translate(62 329)"/>
+    <rect id="Rectangle_989" data-name="Rectangle 989" class="cls-1" width="20" height="20" rx="3" transform="translate(87 299)"/>
+    <rect id="Rectangle_988" data-name="Rectangle 988" class="cls-1" width="20" height="35" rx="3" transform="translate(87 324)"/>
+  </g>
+</svg>

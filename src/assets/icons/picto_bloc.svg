@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c4c4c4;
+      }
+    </style>
+  </defs>
+  <g id="picto_bloc" transform="translate(-85 -299)">
+    <rect id="Rectangle_991" data-name="Rectangle 991" class="cls-1" width="45" height="60" rx="3" transform="translate(85 299)"/>
+  </g>
+</svg>

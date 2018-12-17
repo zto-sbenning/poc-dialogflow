@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 9.688">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+      }
+    </style>
+  </defs>
+  <path id="picto_fleche_droite_gris" class="cls-1" d="M.229,136.291h0l4.082-4.062a.781.781,0,0,1,1.1,1.107l-2.741,2.728H19.218a.781.781,0,1,1,0,1.562H2.673l2.741,2.728a.781.781,0,0,1-1.1,1.107L.229,137.4h0A.782.782,0,0,1,.229,136.291Z" transform="translate(20 141.688) rotate(180)"/>
+</svg>

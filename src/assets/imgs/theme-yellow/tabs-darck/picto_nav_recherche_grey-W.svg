@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #FDA085;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: rgba(0,0,0,0);
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="picto_nav_recherche_grey" transform="translate(-232 -620)">
+    <circle id="Ellipse_240" data-name="Ellipse 240" class="cls-1" cx="22" cy="22" r="22" transform="translate(232 620)"/>
+    <path id="Search" class="cls-2" d="M17.671,16.167l-4.928-4.93a6.976,6.976,0,0,0,1.35-4.156A7.112,7.112,0,0,0,7.021,0,6.989,6.989,0,0,0,0,7.031a7.113,7.113,0,0,0,7.072,7.082,6.954,6.954,0,0,0,4.168-1.365l.005,0,4.924,4.926a1.063,1.063,0,1,0,1.5-1.5ZM7.067,12.7A5.69,5.69,0,0,1,1.409,7.036,5.593,5.593,0,0,1,7.026,1.411a5.69,5.69,0,0,1,5.657,5.665A5.593,5.593,0,0,1,7.067,12.7Z" transform="translate(245 632)"/>
+  </g>
+</svg>

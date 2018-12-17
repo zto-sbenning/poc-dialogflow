@@ -21,10 +21,11 @@ const asap = (fn: () => void) => setTimeout(fn, 0);
 })
 export class ChatPage {
 
+  ip;
   myMessage : string;
   sending : boolean;
 
-  conversation: {sender: string, message: string, card?: any}[] = [];
+  conversation: {sender: string, message: string, card?: any, suggestion?: any}[] = [];
 
   iosListening = false;
 
@@ -45,12 +46,17 @@ export class ChatPage {
     const messagesObserver = (sender: string) => (content: any) => {
       const message = typeof(content) === 'string' ? content : content.message;
       const card = typeof(content) === 'string' ? undefined : content.card;
+      const suggestion = typeof(content) === 'string' ? undefined : content.suggestion;
       this.sending = false;
       const lastMessage = this.conversation[this.conversation.length - 1];
+      /*
       if (lastMessage && lastMessage.message === message) {
         return ;
       }
-      this.conversation.push({ message, sender, card });
+      */
+      console.log('SSSSSSS:', suggestion);
+      console.log('CCCCCCC:', card);
+      this.conversation.push({ message, sender, card, suggestion });
       this.detector.detectChanges();
     };
     
@@ -64,17 +70,21 @@ export class ChatPage {
 
     const reStartProcess = () => process$;
 
-    this.subscription = process$.pipe(catchError(reStartProcess)).subscribe();
+    this.subscription = process$.pipe(catchError(reStartProcess)).subscribe(i => console.log('IIIIIIIII: ', i));
   
+  }
+
+  ipCo() {
+    this.chat.ipCo(`http://${this.ip}:5000`);
   }
 
   onEnter() {
     this.sendMessage();
   }
 
-  sendMessage() {
+  sendMessage(m?) {
     this.sending = true;
-    this.chat.sendMessageToChatBot(this.myMessage);
+    this.chat.sendMessageToChatBot(m ? m : this.myMessage);
     this.myMessage = '';
   }
 

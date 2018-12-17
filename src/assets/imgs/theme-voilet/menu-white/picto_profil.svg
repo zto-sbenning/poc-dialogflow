@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.531 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="1.249" x2="1" y2="1.249" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8B6BF4"/>
+      <stop offset="1" stop-color="#8B6BF4"/>
+    </linearGradient>
+  </defs>
+  <g id="picto_profil" transform="translate(-70)">
+    <path id="Tracé_821" data-name="Tracé 821" class="cls-1" d="M114.8,11.48a5.74,5.74,0,1,1,5.74-5.74A5.746,5.746,0,0,1,114.8,11.48Zm0-9.917a4.177,4.177,0,1,0,4.177,4.177A4.182,4.182,0,0,0,114.8,1.563Z" transform="translate(-37.533)"/>
+    <path id="Tracé_822" data-name="Tracé 822" class="cls-1" d="M70.781,321.12a.781.781,0,0,1-.781-.781,6.986,6.986,0,0,1,6.978-6.978h.575a6.986,6.986,0,0,1,6.978,6.978.781.781,0,0,1-.781.781Zm.837-1.562H82.913a5.424,5.424,0,0,0-5.359-4.634h-.575A5.424,5.424,0,0,0,71.619,319.558Z" transform="translate(0 -301.12)"/>
+  </g>
+</svg>

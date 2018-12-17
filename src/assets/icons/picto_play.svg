@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="picto_play" transform="translate(2469 -5463)">
+    <path id="_082-play-button" data-name="082-play-button" class="cls-1" d="M.96,19.7A2.011,2.011,0,0,1,0,17.974V2.026A2.024,2.024,0,0,1,2.93.216L18.881,8.19a2.024,2.024,0,0,1,0,3.621L2.93,19.785A2.012,2.012,0,0,1,.96,19.7Z" transform="translate(-2454 5476)"/>
+    <g id="Ellipse_291" data-name="Ellipse 291" class="cls-2" transform="translate(-2469 5463)">
+      <circle class="cls-3" cx="23" cy="23" r="23"/>
+      <circle class="cls-4" cx="23" cy="23" r="20.5"/>
+    </g>
+  </g>
+</svg>

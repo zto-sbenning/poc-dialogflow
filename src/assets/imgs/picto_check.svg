@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 108.516">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffa74a;
+      }
+
+      .cls-2 {
+        filter: url(#picto_check);
+      }
+    </style>
+    <filter id="picto_check" x="0" y="0" width="130" height="108.516" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="picto_check-2" data-name="picto_check" class="cls-1" d="M26.952,133.516a3.9,3.9,0,0,1-2.792-1.176L1.114,108.773A3.906,3.906,0,1,1,6.7,103.311l20.254,20.712L93.3,56.175a3.906,3.906,0,1,1,5.585,5.462l-69.141,70.7A3.9,3.9,0,0,1,26.952,133.516Z" transform="translate(15 -45)"/>
+  </g>
+</svg>

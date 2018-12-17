@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.188 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="picto_nav_actus_color" transform="translate(-31 -634)">
+    <path id="_092-home" data-name="092-home" class="cls-1" d="M52.923,7.081,45.11.2a.781.781,0,0,0-1.033,0L36.265,7.081A.781.781,0,0,0,36,7.667V19.219a.781.781,0,0,0,.781.781H52.406a.781.781,0,0,0,.781-.781V7.667A.781.781,0,0,0,52.923,7.081ZM42.445,20V13.115h4.3V20h-4.3Zm9.18-1.562H48.3v-6.1a.781.781,0,0,0-.781-.781H41.664a.781.781,0,0,0-.781.781v6.1h-3.32V8.02l7.031-6.2,7.031,6.2Z" transform="translate(-5 634)"/>
+    <path id="Tracé_805" data-name="Tracé 805" class="cls-2" d="M-6175.853-2203.445v-11.176l7.556-6.486,7.588,7.008v11.212h-4.639v-7.66h-6.219v7.1Z" transform="translate(6208 2856)"/>
+  </g>
+</svg>
