@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Chat</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding #content>
+  <div class="chats">
+    <div class="chatbox">
+      <div *ngFor="let msgWrapper of conversation">
+        <div class="message sent" *ngIf="msgWrapper.sender === 'me'">
+          {{msgWrapper.message}}
+          <span class="metadata">
+            <span class="time">{{msgWrapper.createdAt | date: 'HH:mm aaa'}}</span>
+          </span>
+        </div>
+        <div class="message received" *ngIf="msgWrapper.card">
+            Title: {{msgWrapper.card.title}}
+            <button ion-button (click)="afficher()">AFFICHER LE RÉSULTAT</button>
+          </div>
+        <div class="message received" *ngIf="msgWrapper.sender === 'bot'">
+          {{msgWrapper.message}}
+          <span class="metadata">
+            <span class="time">{{msgWrapper.createdAt | date: 'HH:mm aaa'}}</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-footer>
+    <p text-center *ngIf="sending">sending...</p>
+    <div class="flex-items" padding>
+
+      <ion-input [(ngModel)]="myMessage" name="myMessage" class="input_message" placeholder="send message ..." (keyup.enter)="onEnter()"></ion-input>
+      <ion-icon (click)="sendMessage()" class="send" name="send"></ion-icon>
+      <ion-icon (click)="sendVoice()" *ngIf="!iosListening" class="send" name="mic"></ion-icon>
+      <ion-icon (click)="endVoice()" *ngIf="iosListening" class="send" name="mic-off"></ion-icon>
+    </div>
+  </ion-footer>
+</ion-content>
