@@ -75,7 +75,7 @@ export class ChatPage {
   }
 
   ipCo() {
-    this.chat.ipCo(`http://${this.ip}:5000`);
+    this.chat.ipCo(`http://${this.ip}:8090`);
   }
 
   onEnter() {

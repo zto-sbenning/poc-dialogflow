@@ -402,7 +402,6 @@ page-chat {
   }
   .acheter{
     height: 50px;
-    width: 155px;
     z-index: 9;
     border-radius: 30px;
     font-family: 'Roboto';
@@ -457,6 +456,10 @@ page-chat {
         display:  flex;
         background-color: #fff;
     }
+    .warning {
+        background-color: #ff9494;
+        padding: 16px;
+    }
     .icon{
         font-size: 50px;
         opacity: 0.5;
@@ -475,17 +478,13 @@ page-chat {
         height: 100%;
         position: relative;
     }
-    .footer{
-        position: fixed;
-        bottom: 5%;
-    }
     .chats {
         height: 100%;
         position: relative;
         z-index: 0;
     }
     .chats .chatbox {
-        height: calc(100% - 80px);
+        height: 100%;
         overflow-x: hidden;
         padding: 0 16px;
         padding-bottom: 30px;
@@ -1208,4 +1207,9 @@ page-chat {
   }
   
   }
+}
+
+ion-footer {
+    position: absolute;
+    bottom: 0;
 }

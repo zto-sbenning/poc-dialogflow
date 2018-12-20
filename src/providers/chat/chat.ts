@@ -14,7 +14,7 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
 @Injectable()
 export class ChatProvider {
 
-  URL = 'http://192.168.1.33:5000';
+  URL = 'https://hubspectacles.zento.fr';
 
   constructor(
     public http: HttpClient,
@@ -50,7 +50,7 @@ export class ChatProvider {
   }
 
   private sendChatBotMessage(message: string): Observable<any> {
-    return this.http.post<string>(`${this.URL}/messages`, { message }).pipe(
+    return this.http.post<string>(`${this.URL}/api/v1/chatbot/messages`, { message }).pipe(
       tap(r => console.log('Got r: ', r)),
       mergeMap<any, any>(r => 
         r && r.response && r.response.result && r.response.result.fulfillment && r.response.result.fulfillment.messages

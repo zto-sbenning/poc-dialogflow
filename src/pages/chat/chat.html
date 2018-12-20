@@ -26,8 +26,9 @@
 </ion-header>
 
 <ion-content class="background-content" padding #content>
-  <input [(ngModel)]="ip">
+  <input [(ngModel)]="ip" placeholder="Chat Bot IP">
   <button (click)="ipCo()">OK</button>
+  <p class="warning">Pour le moment, le bot comprend les noms de villes mais ne s'en sert pas dans la recherche. Idem pour les noms de themes.<br>Pour le moment, le bot peut utiliser dans sa recherche un nom d'artiste et/ou une date ou une pèriode.</p>
   <div class="chats">
     <div class="chatbox">
       <div *ngFor="let msgWrapper of conversation">
@@ -38,7 +39,8 @@
           </span>
         </div>
         <div class="message received" *ngIf="msgWrapper.card">
-            Title: {{msgWrapper.card.title}}
+            {{msgWrapper.card.title}}<br>
+            {{msgWrapper.card.subtitle}}
             <img src="{{msgWrapper.card.imageUrl}}">
             <button ion-button class="acheter" (click)="afficher()">AFFICHER LE RÉSULTAT</button>
           </div>
@@ -55,15 +57,15 @@
     </div>
   </div>
 
-  <ion-footer>
-    <p text-center *ngIf="sending">sending...</p>
-    <div class="flex-items" padding>
-
-      <ion-input [(ngModel)]="myMessage" name="myMessage" class="input_message" placeholder="send message ..." (keyup.enter)="onEnter()"></ion-input>
-      <ion-icon (click)="sendMessage()" class="send" name="send"></ion-icon>
-      <ion-icon (click)="sendVoice()" *ngIf="!iosListening" class="send" name="mic"></ion-icon>
-      <ion-icon (click)="endVoice()" *ngIf="iosListening" class="send" name="mic-off"></ion-icon>
-    </div>
-  </ion-footer>
 </ion-content>
+<ion-footer>
+  <p text-center *ngIf="sending">sending...</p>
+  <div class="flex-items" padding>
+
+    <ion-input [(ngModel)]="myMessage" name="myMessage" class="input_message" placeholder="send message ..." (keyup.enter)="onEnter()"></ion-input>
+    <ion-icon (click)="sendMessage()" class="send" name="send"></ion-icon>
+    <ion-icon (click)="sendVoice()" *ngIf="!iosListening" class="send" name="mic"></ion-icon>
+    <ion-icon (click)="endVoice()" *ngIf="iosListening" class="send" name="mic-off"></ion-icon>
+  </div>
+</ion-footer>
 </ng-container>
